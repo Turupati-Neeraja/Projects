@@ -1,0 +1,103 @@
+body
+{
+    background-color: rgb(143, 187, 189);
+}
+h1
+{
+    text-align: center;
+    padding-top: 10vh;
+    text-shadow: 2px 3px 3px wheat ;
+}
+div
+{
+   border: 1px solid black;
+   background-color: rgb(128, 164, 165);
+   font-size: 20px;
+   border-radius: 0.8em;
+}
+button
+{
+    margin-top:10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 0.6em;
+    background-color:darkgray;
+}
+/*----------------MAIN SECTION---------*/
+.value
+{
+    background-color:rgb(146, 165, 165);
+    padding:1vw; 
+    border: none;
+}
+h2
+{
+    text-align: center;
+    text-shadow: 2px 3px 3px rgb(153, 72, 74) ; 
+    margin-top: 0px;
+}
+.counter
+{
+    margin: 20px 0px 0px 70px;
+    padding: 0px;
+    width: 90%;
+}
+.eo 
+{
+    background-color:rgb(134, 113, 154);
+    border-radius: 0.3em;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    align-content: center;
+} 
+.data
+{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.3em;
+    text-align: center;
+    align-content: center;
+}
+.num
+{
+    background: none;
+    border: none;
+   text-align: center;
+   margin: 0px 40%;
+   font-size: 25px;
+}
+aside
+{
+    display: flex;
+    justify-content:space-evenly;
+}
+.buttons
+{
+    font-size: 18px;
+}
+.model
+{
+    display: none;
+    z-index:2;
+}
+.model.show
+{
+    display: block;
+}
+@media (max-width:992px)
+{
+    div
+    {  
+       padding:3%;
+       margin: 0px 10vw;
+    } 
+}
+@media (min-width:996px) 
+{
+    div
+    {  
+       padding:4%;
+       margin: 0px 30vw;
+    }  
+}
