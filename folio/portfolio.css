@@ -1,0 +1,201 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* Taking some root values where we can access by just declaring var(--name) 
+     incase if we want to use the same background-color we can just extract the root values with mention the same color repeatdly */
+:root
+{
+   --textcolor:#fbf6f6e0;
+   --bg:rgb(13, 12, 12);
+   --shadower:whitesmoke;
+   --primary:#0078ffc5;
+   --icon: rgb(125, 74, 74);
+   --secondary: #0bdbfb;
+}
+/* header styling starts here */
+h2.logo
+{
+   text-shadow: 2px 3px 3px var(--primary);
+   color: aliceblue;
+}
+.navbar
+{
+    display: flex;
+    background-color: var(--bg);
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    align-items: center;
+    padding-left: 150px;
+    height: 50px;
+}
+#items
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+li
+{
+  list-style-type: none;
+}
+.item>a,.it>a
+{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+a
+{
+    text-decoration: none;
+}
+.item>a:hover
+{
+   color:#489a9a;
+}
+.image
+{
+  background-image: url("Assets/bgprofile.jpg");
+  min-height: 50em;
+  background-size:100em;
+}
+/* ends header styling */
+/* main styling starts here */
+.name
+{
+    position: absolute;
+    top: 40%;
+    color: var(--bg);
+    text-shadow: 2px 3px 3px white;
+    font-size: 40px;
+    font-weight:bolder;
+    margin-left: 150px;
+}
+#about
+{
+    display: flex;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.details
+{
+    display: flex;
+    width: 70%;
+}
+.details img
+{
+    border-radius: 10px;
+}
+.info
+{
+    list-style-type: none;
+    padding: 20px;
+}
+.info li
+{
+    gap: 5px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.intro
+{
+  text-align: center;
+}
+.aboutme
+{
+    width: 60%;
+}
+.heading
+{
+    border: 1px solid none;
+    background:var(--shadower);
+    border-radius: 10px;
+}
+#skills
+{
+    display: flex;
+    margin: 90px 170px;
+    padding:50px;
+}
+.educa
+{
+    padding-top: 50px;
+}
+.education
+{
+    padding: 50px 160px;
+    font-size: 17px;
+}
+h3,h4
+{
+    display:inline-block;
+}
+.qualify
+{
+    padding-top: 10px;
+}
+nav>h3>span
+{
+   color: var(--icon);
+}
+.arrange
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.space
+{
+    width:50%;
+}
+li>p,.edu-details
+{
+    padding-left: 40px;
+}
+.points
+{
+    text-align: center;
+    padding: 40px;
+}
+#achievements
+{ 
+    margin:50px ;
+    padding: 40px;
+}
+/* main styling ends here */
+/* footer styling starts here */
+footer
+{
+   background-color:rgb(43, 41, 41);
+   color: var(--textcolor);
+   padding-top: 30px;
+}
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    height: 10em;
+    padding: 30px;
+}
+.me 
+{
+    text-align: center;
+    padding-top: 30px;
+}
+li.it
+{
+  padding: 10px;
+}
+.copyright
+{
+    text-align: center;
+    background:rgb(217, 210, 210);
+    color:var(--bg) ;
+    height: 20px;
+    padding: 10px;
+}
+/* footer styling ends here */
