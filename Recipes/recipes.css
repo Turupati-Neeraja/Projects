@@ -1,0 +1,272 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    background-color:gray;
+    background-image: url(./Assets-recipe/recipe\ body\ bg.jpg);
+    background-size:cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* header navbar styling */
+.navbar
+{
+    display: flex;
+    background-color:#ccc;
+    justify-content: space-around;
+    padding: 0.5em;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+h1
+{
+    text-shadow: 2px 2px 2px darkgoldenrod;  
+}
+/* option styling */
+.diff
+{
+    border-radius: 0.8em;
+    border:none;
+}
+.diff:hover
+{
+    background-color:aliceblue;
+}
+/* main styling */
+.center /* heading */
+{
+    color: aliceblue;
+    font-style: italic;
+    text-align: center;
+    margin-top: 80px;
+}
+#r1 /* whole data */
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 5vh;
+    margin: 2vw;
+}
+.info /* outer or single div */
+{
+    width: 30vw;
+    height: 36vh;
+    background-color:rgb(146, 165, 165);
+    border-radius: 0.8em;
+    padding-bottom: 1vh ;
+}
+.name /* recipe name */
+{
+    text-align: center;
+    text-shadow: 2px 2px burlywood;
+    padding: 2vh 0px 1vh;
+    font-size: large;
+}
+.exdiv /* inside or inner div */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    gap: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.divtwo
+{
+    display: flex;
+    padding:0.5vw ;
+    gap: 1vw;
+}
+img
+{
+    height: 29vh;
+    width: 20vw;
+    border-radius: 1em;
+}
+/* button View Recipe styling */
+.click
+{
+   background-color: rgb(167, 148, 124);
+   font-weight: bold;
+   padding: 0.5em;
+   border-radius: 0.8em;
+   margin: 1vh; 
+}
+/* model starts here */
+.modal {
+    position: fixed;
+    top: 13%;
+    left: 20%;
+    background-color:#a4a6aa;
+    padding: 1vw;
+    width: 50vw;
+    display: none; /* Initially hidden */
+}
+/* closing the model */
+.close
+{
+    margin-left: 93%;
+    background: none;
+    border: none;
+    font-size: large;
+    border-radius: 50%;
+    padding: 0.5%;
+}
+.close:hover
+{
+    background-color: grey;
+    border-radius: 40%;
+}
+.modal h1
+{
+    text-align: center;
+    padding-bottom: 2vh;
+}
+h3
+{
+   padding:1.5vh 3vh;
+   text-decoration: underline;  
+}
+.modal ul 
+{
+    padding-left:5vw ;
+}
+.modal ul li {
+    margin: 5px 0;
+}
+/* note point */
+.note
+{
+    text-align: center;
+    padding-top: 2vh;
+    color:brown;
+}
+/* after opening model data the background colour changing to transparency */
+.container
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450%;
+    background: rgba(0, 0, 0, 0.5); /* Gray with transparency */
+    display: none; /* Initially hidden */
+}
+#foot{
+    background-color:rgb(43, 41, 41);
+    color:#fbf6f6e0;
+    height: 15vh;
+    text-align: center;
+    padding: 3vh;
+}
+.icons
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+    font-size:30px;
+    gap: 7vw;   
+}
+.icon1:hover
+{
+    color:#e5cb7a;  
+}
+.icon2:hover
+{
+    color:#6F4E37;
+}
+.icon3:hover
+{
+    color:#990012;
+}
+@media (min-width:50px) and (max-width:996px)
+{
+    body
+    {
+        background-size:500%;
+    }
+    h1 
+    {
+        font-size:22px;
+    }
+    #search
+    {
+        width: 15vh;
+    }
+    /* option styling */
+    .diff
+    {
+        height: 3vh;
+    }
+    .center /* heading */
+    {
+        margin: 60px 0px 30px 0px;
+    }
+    #r1 /* whole data */
+    {
+        margin-top: 8vh;
+        margin: 3vw;
+    }
+    .info /* outer or single div */
+    {
+        width: 45vw;
+        height: 29vh;
+        margin-bottom: 2vh;
+    }
+    .exdiv /* inside or inner div */
+    {
+        font-size: 12px;
+        gap: 7px;
+        justify-content: center;
+    }
+    .divtwo
+    {
+        padding:0.3vw ;
+    }
+    img
+    {
+        height: 21vh;
+        width: 27vw;
+        border-radius: 50%;
+    }
+    /* button View Recipe styling */
+    .click
+    {
+        width: 15vw;
+        font-size: 10px;
+    }
+    .modal 
+    {
+        left: 8%;
+        top: 5%;
+        width: 83vw;
+        box-sizing:border-box;
+    }
+    h3
+    {
+        padding:1vh;
+        text-decoration: underline;  
+    }
+    .modal ul 
+    {
+        padding-left:5vw ;
+    }
+    .modal ul li {
+        margin: 0px;
+    }
+    .container
+    {
+        height: 600%;
+    }
+}
+@media (min-width:998px)
+{
+    .exdiv /* inside or inner div */
+    {
+        text-align: center;
+    }
+}
