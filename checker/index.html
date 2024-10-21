@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter by Model</title>
+    <link rel="stylesheet" href="./Model.css">
+</head>
+<body>
+    <section>
+        <h1>CHECKER</h1>
+        <div>
+            <p>If you want to check whether the Counter number is Even and Prime ! click on let's see button below...</p>
+            <button onclick="see()" class="button">Let's see</button>
+        </div>
+    </section>
+    <main class="model" >
+        <section class="counter">
+            <div class="value">
+                <h2 class="head">COUNTER</h2>
+                <nav class="data">
+                    <p class="eo" id="d1" onclick="value1()">----</p>
+                    <p class="eo" id="d2" onclick="value()">----</p>
+                </nav>
+                <p class="num">0</p>
+                <aside >
+                    <button onclick="incre()" class="buttons">+</button>
+                    <button onclick="decre()" class="buttons">-</button>
+                </aside>
+                <aside>
+                    <button onclick="reset()" class="buttons">reset</button>
+                    <button onclick="see()" class="buttons" >close</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <script src="./Model.js"></script>
+</body>
+</html>
